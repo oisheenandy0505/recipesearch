@@ -1,0 +1,92 @@
+/* RecipeDetailsPage.css */
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: url('complete_bg.webp') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent body scrolling */
+  }
+  
+  .recipe-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: transparent; /* Slightly translucent white background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%; /* Ensure full width with max constraint */
+    box-sizing: border-box;
+    max-height: 90vh; /* Reduce the height of the whole container */
+    overflow: auto; /* Allow scrolling within the container if necessary */
+  }
+  
+  .recipe-image {
+    width: 80%; /* Adjust this percentage to control the width of the image */
+    max-width: 600px; /* Optional: Set a maximum width to avoid too large images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below the image */
+  }
+  
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 400px; /* Fixed height to ensure columns fit within the viewport */
+  }
+  
+  .details-column {
+    flex: 1;
+    margin: 0 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling */
+    background: rgba(255, 255, 255, 0.5); /* Softer translucent background for columns */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a soft look */
+  }
+  
+  .ingredients-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ingredients-list li {
+    margin-bottom: 10px;
+  }
+  
+  .instructions {
+    text-align: left;
+  }
+  
+  .nutritional-info p {
+    margin: 5px 0;
+  }
+  
+  .add-to-plan-button {
+    padding: 12px 24px; /* Increase padding for a wider button */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Softer border color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Softer white background */
+    color: #333; /* Darker text color for contrast */
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center; /* Center text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    width: 100%; /* Full width of the container */
+    margin-top: 10px; /* Move the button up a little */
+  }
+  
+  .add-to-plan-button:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly darker on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+    }
+  
